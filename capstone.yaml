@@ -1,0 +1,45 @@
+version: "1.0"
+name: "flyrank-capstone-metering-billing"
+title: "Usage Metering & Billing Engine"
+author: "Jezreal Momoh"
+email: "jezreelmomoh1234@gmail.com"
+track: "Backend AI Engineering"
+milestone: "Week 8 Capstone"
+
+runtime:
+  language: "python"
+  version: "3.12"
+
+commands:
+  run: "python -m uvicorn app.main:app --host 0.0.0.0 --port 8000"
+  seed: "python scripts/seed_data.py"
+  test: "pytest"
+  verify_probes: "python scripts/verify_probes.py"
+
+server:
+  base_url: "http://localhost:8000"
+  endpoints:
+    health: "/health"
+    meter: "/api/meter"
+    generate: "/api/generate"
+    usage: "/api/usage"
+    plans: "/api/plans"
+    checkout: "/api/billing/checkout-session"
+    webhook: "/api/webhooks/stripe"
+
+probes:
+  probe_1_idempotency:
+    description: "Send same billable request twice with one idempotency key -> exactly 1 event; 2nd mirrors 1st"
+    command: "python scripts/verify_probes.py --probe 1"
+  probe_2_quota_boundaries:
+    description: "Drive tenant to exact quota -> boundary succeeds; next returns 429/402 with clear message"
+    command: "python scripts/verify_probes.py --probe 2"
+  probe_3_stripe_checkout_flip:
+    description: "Complete Stripe test Checkout -> webhook flips Free to Pro; GET /usage reflects Pro limits"
+    command: "python scripts/verify_probes.py --probe 3"
+  probe_4_webhook_security:
+    description: "Forged webhook signature returns 400; replayed real event processed exactly once"
+    command: "python scripts/verify_probes.py --probe 4"
+  probe_5_token_pricing_rules:
+    description: "Cached-input and reasoning-token rules compute exact totals matching GET /usage"
+    command: "python scripts/verify_probes.py --probe 5"
