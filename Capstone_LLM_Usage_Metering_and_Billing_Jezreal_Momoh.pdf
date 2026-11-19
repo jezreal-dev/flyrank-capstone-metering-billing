@@ -1,0 +1,421 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R 11 0 R] /Count 5 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612.0 792.0] /Contents 4 0 R /Resources << /Font << /F1 99 0 R /F2 98 0 R /F3 97 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 7253 >>
+stream
+BT /F2 13.0 Tf 0.05 0.05 0.05 rg 46.0 752.0 Td (FlyRank Backend Track  -  Capstone Submission: LLM Usage Metering & Billing) Tj ET
+BT /F2 13.0 Tf 0.05 0.05 0.05 rg 46.0 735.5 Td (Engine) Tj ET
+BT /F1 7.8 Tf 0.35 0.35 0.35 rg 46.0 715.0 Td (Candidate: Jezreal Momoh  |  Milestone: Week 8 Capstone  |  Repo: flyrank-capstone-metering-billing  |  Budget: $0.00 Guaranteed) Tj ET
+BT /F2 9.5 Tf 0.05 0.05 0.05 rg 46.0 693.0 Td (1. Executive Mission & System Vision) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 677.0 Td (Modern multi-tenant AI platforms face existential financial and architectural risks: double-billing from network retries, silent) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 666.0 Td (revenue leakage from floating-point arithmetic errors, unexpected runaway API consumption from lagging post-billing, and security) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 655.0 Td (breaches from unverified billing webhooks. Naive SaaS billing systems meter requests after execution, leaving providers liable for) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 644.0 Td (expensive GPU compute when customer balances or plan limits are breached.) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 630.0 Td (The LLM Usage Metering & Billing Engine provides an enterprise-grade, deterministic metering and monetization core. Built on zero-) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 619.0 Td (dependency pure Python and SQLite with Write-Ahead Logging \(WAL\), the platform delivers: \(1\) exactly-once idempotent metering with) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 608.0 Td (cached replay responses; \(2\) pre-action quota gatekeeping with honest status codes \(429 Too Many Requests with Retry-After) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 597.0 Td (headers, and 402 Payment Required for delinquent accounts\); \(3\) pure integer microcents financial math \($1 = 100,000,000) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 586.0 Td (microcents\) with zero IEEE-754 float drift; and \(4\) cryptographic HMAC-SHA256 Stripe webhook synchronization.) Tj ET
+BT /F2 9.5 Tf 0.05 0.05 0.05 rg 46.0 569.0 Td (2. Headline Quality Metrics & Evaluator Benchmarks) Tj ET
+q 0.92 0.92 0.92 rg 46.0 538.0 520.0 15.0 re f Q
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 50.0 542.0 Td (Evaluator Metric) Tj ET
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 160.0 542.0 Td (Engine Benchmark) Tj ET
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 255.0 542.0 Td (Measured Verification) Tj ET
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 460.0 542.0 Td (Production Status) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 529.0 Td (Idempotent Deduplication) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 160.0 529.0 Td (Zero double-counting) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 255.0 529.0 Td (2/2 identical replays return cached payload, 1 DB row) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 460.0 529.0 Td (VERIFIED \(100%\)) Tj ET
+q 0.97 0.97 0.97 rg 46.0 515.5 520.0 11.0 re f Q
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 518.0 Td (Boundary Quota Gate) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 160.0 518.0 Td (Call 1000 OK, 1001 429) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 255.0 518.0 Td (Call #1,000 passes \(200\), Call #1,001 returns 429 Retry-After) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 460.0 518.0 Td (VERIFIED HONEST) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 507.0 Td (Delinquency Enforcement) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 160.0 507.0 Td (402 Payment Required) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 255.0 507.0 Td (past_due / canceled status blocks calls with HTTP 402) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 460.0 507.0 Td (VERIFIED \(100%\)) Tj ET
+q 0.97 0.97 0.97 rg 46.0 493.5 520.0 11.0 re f Q
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 496.0 Td (Webhook Security) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 160.0 496.0 Td (HMAC-SHA256 signature) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 255.0 496.0 Td (Forged signatures rejected \(400\), legitimate events verified) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 460.0 496.0 Td (SECURE \(0-DEP\)) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 485.0 Td (Webhook Replay Guard) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 160.0 485.0 Td (Exactly-once execution) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 255.0 485.0 Td (Duplicate evt_... delivers 200 with already_processed skip) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 460.0 485.0 Td (VERIFIED IDEMPOTENT) Tj ET
+q 0.97 0.97 0.97 rg 46.0 471.5 520.0 11.0 re f Q
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 474.0 Td (AI Token Money Math) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 160.0 474.0 Td (Microcents precision) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 255.0 474.0 Td (Cached tokens 50% discount, reasoning billed as output) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 460.0 474.0 Td (EXACT \($0 DRIFT\)) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 463.0 Td (Budget Expenditure) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 160.0 463.0 Td ($0.00 Guaranteed) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 255.0 463.0 Td (100% free-tier & Stripe test mode sandbox, zero paid dependencies) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 460.0 463.0 Td (COMPLIANT \($0\)) Tj ET
+q 0.97 0.97 0.97 rg 46.0 449.5 520.0 11.0 re f Q
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 452.0 Td (Automated Test Suite) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 160.0 452.0 Td (30 / 30 tests passing) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 255.0 452.0 Td (Pytest suite covering all routes, services, math, and probes) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 460.0 452.0 Td (100% PASSING) Tj ET
+BT /F2 9.5 Tf 0.05 0.05 0.05 rg 46.0 434.0 Td (3. End-to-End Architectural Pipeline) Tj ET
+q 0.96 0.96 0.96 rg 46.0 332.2 520.0 85.8 re f Q
+BT /F2 8.5 Tf 0.10 0.10 0.10 rg 54.0 407.0 Td (Dataflow: Ingestion, Idempotency Check, Quota Gate, Integer Math & Stripe Sync) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 394.0 Td (1. Request Ingestion) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 394.0 Td (Client submits POST /api/meter or POST /api/generate with mandatory Idempotency-Key header.) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 383.2 Td (2. Idempotency Lock) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 383.2 Td (SHA-256 payload hash compared against idempotency_records; duplicate keys replay cached HTTP responses.) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 372.4 Td (3. Pre-Action Quota Gate) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 372.4 Td (Tenant plan limits queried atomically. Breaches trigger immediate 429; delinquency triggers 402.) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 361.6 Td (4. LLM Execution & Math) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 361.6 Td (Upon clearance, tokens are priced via pure integer microcents math \(discounted cache, output reasoning\).) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 350.8 Td (5. Atomic Usage Ledger) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 350.8 Td (usage_events row committed to SQLite WAL; tenant usage counters updated within the same transaction.) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 340.0 Td (6. Stripe Synchronization) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 340.0 Td (HMAC-SHA256 signed webhooks process checkout.session.completed, flipping Free to Pro tier seamlessly.) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 46.0 40.0 Td (FlyRank Backend AI Engineering  -  Capstone Submission  -  Jezreal Momoh) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 511.0 40.0 Td (Page 1 of 5) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612.0 792.0] /Contents 6 0 R /Resources << /Font << /F1 99 0 R /F2 98 0 R /F3 97 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 7118 >>
+stream
+BT /F2 9.5 Tf 0.05 0.05 0.05 rg 46.0 749.0 Td (4. Pure-Integer Microcents Money Math & AI Token Pricing) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 733.0 Td (In financial and metered billing architectures, standard IEEE-754 floating-point numbers \(`float`\) introduce catastrophic) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 722.0 Td (cumulative rounding errors \(e.g. `0.1 + 0.2 != 0.3`\). When millions of fractional-cent token requests are billed monthly, float) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 711.0 Td (imprecision leads to uncollectible fractions of cents or audit failures. The engine eliminates floats entirely by representing all) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 700.0 Td (monetary units as 64-bit integers in microcents \($1.00 USD = 100 cents = 100,000,000 microcents\).) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 686.0 Td (The AI pricing model reflects real-world frontier LLM provider architectures: \(1\) standard prompt input tokens are billed at the) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 675.0 Td (base rate \($0.150 per 1M tokens\); \(2\) prompt-cache hits receive an automated 50% discount \($0.075 per 1M tokens\); and \(3\)) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 664.0 Td (reasoning or 'thinking' tokens \(e.g., DeepSeek-R1, OpenAI o1/o3\) generate deep reasoning chains and are billed strictly at the) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 653.0 Td (higher output token rate \($0.600 per 1M tokens\). All division operations use integer ceiling logic `\(tokens * rate + 999,999\) //) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 642.0 Td (1,000,000` to prevent any fraction-of-a-microcent revenue leakage.) Tj ET
+q 0.12 0.13 0.15 rg 46.0 455.2 520.0 172.8 re f Q
+BT /F2 7.0 Tf 0.70 0.72 0.76 rg 54.0 617.5 Td (Zero-Float Integer Token Pricing Math \(app/core/money_math.py\)) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 609.0 Td (MICROCENTS_PER_CENT = 1_000_000) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 599.2 Td (MICROCENTS_PER_USD  = 100_000_000) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 589.4 Td () Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 579.6 Td (def compute_token_cost_microcents\() Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 569.8 Td (    input_tokens: int, output_tokens: int,) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 560.0 Td (    cached_input_tokens: int = 0, reasoning_tokens: int = 0,) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 550.2 Td (    input_rate: int = 15_000_000,  # $0.150 per 1M tokens in microcents) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 540.4 Td (    output_rate: int = 60_000_000, # $0.600 per 1M tokens in microcents) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 530.6 Td (    cached_discount_pct: int = 50  # 50% discount on cached inputs) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 520.8 Td (\) -> int:) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 511.0 Td (    effective_cached_rate = \(input_rate * \(100 - cached_discount_pct\)\) // 100) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 501.2 Td (    cost_std_input = \(input_tokens * input_rate + 999_999\) // 1_000_000) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 491.4 Td (    cost_cached_in = \(cached_input_tokens * effective_cached_rate + 999_999\) // 1_000_000) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 481.6 Td (    effective_output_tokens = output_tokens + reasoning_tokens) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 471.8 Td (    cost_output    = \(effective_output_tokens * output_rate + 999_999\) // 1_000_000) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 462.0 Td (    return cost_std_input + cost_cached_in + cost_output) Tj ET
+BT /F2 9.5 Tf 0.05 0.05 0.05 rg 46.0 447.2 Td (5. Tiered Subscription Plans & Quota Limits) Tj ET
+q 0.92 0.92 0.92 rg 46.0 416.2 520.0 15.0 re f Q
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 50.0 420.2 Td (Subscription Plan) Tj ET
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 160.0 420.2 Td (Monthly Calls) Tj ET
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 255.0 420.2 Td (Monthly Tokens) Tj ET
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 370.0 420.2 Td (Monthly Price) Tj ET
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 455.0 420.2 Td (Overage Policy) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 407.2 Td (Free Tier \(Default\)) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 160.0 407.2 Td (1,000 calls / mo) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 255.0 407.2 Td (100,000 tokens / mo) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 370.0 407.2 Td ($0.00 / month) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 455.0 407.2 Td (Hard Stop \(HTTP 429\), Upgrade Required) Tj ET
+q 0.97 0.97 0.97 rg 46.0 393.7 520.0 11.0 re f Q
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 396.2 Td (Pro Tier \(Paid SaaS\)) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 160.0 396.2 Td (50,000 calls / mo) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 255.0 396.2 Td (10,000,000 tokens / mo) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 370.0 396.2 Td ($29.00 / month) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 455.0 396.2 Td (Overage Allowed \($0.20 / 1K calls\)) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 385.2 Td (Enterprise Tier) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 160.0 385.2 Td (Unlimited / Custom) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 255.0 385.2 Td (Unlimited / Custom) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 370.0 385.2 Td (Custom Invoice) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 455.0 385.2 Td (Dedicated Capacity & SLA Guarantee) Tj ET
+BT /F2 9.5 Tf 0.05 0.05 0.05 rg 46.0 367.2 Td (6. Relational Persistence DDL & Composite Index Topology) Tj ET
+q 0.96 0.96 0.96 rg 46.0 265.4 520.0 85.8 re f Q
+BT /F2 8.5 Tf 0.10 0.10 0.10 rg 54.0 340.2 Td (Database Architecture & Index Optimization \(app/core/schema.sql\)) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 327.2 Td (tenants Table) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 327.2 Td (Customer accounts \(id, name, email, stripe_customer_id, status, created_at\). Index: idx_tenants_email.) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 316.4 Td (plans Table) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 316.4 Td (Tier definitions with quotas and microcent prices. Primary plans: 'plan_free' and 'plan_pro'.) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 305.6 Td (subscriptions Table) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 305.6 Td (Active tenant subscriptions \(tenant_id, plan_id, status, stripe_sub_id\). Index: idx_subscriptions_tenant.) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 294.8 Td (usage_events Table) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 294.8 Td (Immutable ledger of metered API calls and token counts. Composite Index: idx_usage_tenant_month.) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 284.0 Td (idempotency_records Table) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 284.0 Td (Cryptographic request hash and cached HTTP payload. Unique Index: idx_idempotency_lookup.) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 273.2 Td (processed_stripe_events) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 273.2 Td (Ledger of synchronized Stripe event IDs \(evt_...\) preventing duplicate webhook executions.) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 46.0 40.0 Td (FlyRank Backend AI Engineering  -  Capstone Submission  -  Jezreal Momoh) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 511.0 40.0 Td (Page 2 of 5) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612.0 792.0] /Contents 8 0 R /Resources << /Font << /F1 99 0 R /F2 98 0 R /F3 97 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 7323 >>
+stream
+BT /F2 9.5 Tf 0.05 0.05 0.05 rg 46.0 749.0 Td (7. Exactly-Once Metering & Idempotency Protocol) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 733.0 Td (Distributed systems frequently encounter transient network dropouts: a client transmits an API request, the server executes it and) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 722.0 Td (writes to the database, but the network connection terminates before the HTTP response reaches the caller. If the client retries) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 711.0 Td (without idempotency controls, the customer is double-billed. The engine implements a strict RFC-compliant `Idempotency-Key`) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 700.0 Td (protocol.) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 686.0 Td (Upon receiving a request, the server computes a SHA-256 digest of the raw request payload. It inspects `idempotency_records`) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 675.0 Td (within an atomic transaction. If the idempotency key exists and the payload hash matches, the server returns the cached status) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 664.0 Td (code and response body immediately, setting `replay: true` without incrementing tenant counters or charging the customer. If the) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 653.0 Td (key exists with a conflicting payload, HTTP 409 Conflict is returned.) Tj ET
+q 0.12 0.13 0.15 rg 46.0 495.6 520.0 143.4 re f Q
+BT /F2 7.0 Tf 0.70 0.72 0.76 rg 54.0 628.5 Td (Atomic Idempotency Interceptor Flow \(app/api/routes_meter.py\)) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 620.0 Td (@router.post\('/api/meter'\)) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 610.2 Td (async def record_meter_event\(request: Request, body: MeterRequest,) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 600.4 Td (                             idempotency_key: str = Header\(..., alias='Idempotency-Key'\)\):) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 590.6 Td (    req_hash = hashlib.sha256\(raw_bytes\).hexdigest\(\)) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 580.8 Td (    cached_record = IdempotencyManager.check\(idempotency_key, req_hash\)) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 571.0 Td (    if cached_record:) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 561.2 Td (        return JSONResponse\(status_code=cached_record['status_code'],) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 551.4 Td (                            content={**cached_record['body'], 'replay': True}\)) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 541.6 Td (    # Perform Pre-Action Quota Validation) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 531.8 Td (    QuotaService.assert_quota_available\(body.tenant_id, quantity=body.quantity\)) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 522.0 Td (    # Record Event & Commit Idempotent Cache) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 512.2 Td (    result = MeterService.record_event\(body, idempotency_key, req_hash\)) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 502.4 Td (    return JSONResponse\(status_code=200, content=result\)) Tj ET
+BT /F2 9.5 Tf 0.05 0.05 0.05 rg 46.0 487.6 Td (8. Pre-Action Quota Boundaries & Honest Status Codes) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 471.6 Td (Unlike systems that meter asynchronously and discover limit breaches after GPU inference has occurred, this platform enforces) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 460.6 Td (synchronous, pre-action quota validation before dispatching work. The system adheres to RFC 6585 and HTTP specification honesty:) Tj ET
+q 0.96 0.96 0.96 rg 46.0 371.6 520.0 75.0 re f Q
+BT /F2 8.5 Tf 0.10 0.10 0.10 rg 54.0 435.6 Td (HTTP Status Code Discipline & Quota Enforcement Rules) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 422.6 Td (Boundary Honesty \(200 OK\)) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 422.6 Td (At limit 1,000, call #1,000 succeeds completely with HTTP 200 OK and valid event ID.) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 411.8 Td (Quota Exceeded \(HTTP 429\)) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 411.8 Td (Call #1,001 is rejected instantly with HTTP 429 Too Many Requests and Retry-After: 3600 header.) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 401.0 Td (Delinquency \(HTTP 402\)) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 401.0 Td (Tenants with past_due or canceled subscriptions are rejected with HTTP 402 Payment Required.) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 390.2 Td (Missing Header \(HTTP 400\)) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 390.2 Td (Requests missing the mandatory Idempotency-Key header are rejected before business logic runs.) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 379.4 Td (Payload Conflict \(HTTP 409\)) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 379.4 Td (Re-using an existing idempotency key with different payload parameters triggers HTTP 409 Conflict.) Tj ET
+BT /F2 9.5 Tf 0.05 0.05 0.05 rg 46.0 363.6 Td (9. Subscription Delinquency State Machine) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 347.6 Td (When recurring billing fails in Stripe, customer subscriptions transition through distinct lifecycle states: `active` ->) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 336.6 Td (`past_due` -> `canceled`. The engine intercepts delinquent tenants at the gateway boundary. Calls from `past_due` accounts return) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 325.6 Td (HTTP 402 with clear remediation instructions, protecting backend compute while prompting immediate payment resolution.) Tj ET
+q 0.92 0.92 0.92 rg 46.0 296.6 520.0 15.0 re f Q
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 50.0 300.6 Td (Subscription Status) Tj ET
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 160.0 300.6 Td (Gateway Decision) Tj ET
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 240.0 300.6 Td (HTTP Status) Tj ET
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 370.0 300.6 Td (API Response Action) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 287.6 Td (active) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 160.0 287.6 Td (ALLOWED) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 240.0 287.6 Td (200 OK) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 370.0 287.6 Td (Proceed to pre-action quota checks and LLM inference) Tj ET
+q 0.97 0.97 0.97 rg 46.0 274.1 520.0 11.0 re f Q
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 276.6 Td (past_due) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 160.0 276.6 Td (REJECTED) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 240.0 276.6 Td (402 Payment Required) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 370.0 276.6 Td (Block execution; instruct tenant to update payment method) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 265.6 Td (canceled) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 160.0 265.6 Td (REJECTED) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 240.0 265.6 Td (402 Payment Required) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 370.0 265.6 Td (Block execution; require new subscription checkout session) Tj ET
+q 0.97 0.97 0.97 rg 46.0 252.1 520.0 11.0 re f Q
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 254.6 Td (unpaid) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 160.0 254.6 Td (REJECTED) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 240.0 254.6 Td (402 Payment Required) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 370.0 254.6 Td (Block execution; account suspended pending balance clearance) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 46.0 40.0 Td (FlyRank Backend AI Engineering  -  Capstone Submission  -  Jezreal Momoh) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 511.0 40.0 Td (Page 3 of 5) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612.0 792.0] /Contents 10 0 R /Resources << /Font << /F1 99 0 R /F2 98 0 R /F3 97 0 R >> >> >>
+endobj
+10 0 obj
+<< /Length 6300 >>
+stream
+BT /F2 9.5 Tf 0.05 0.05 0.05 rg 46.0 749.0 Td (10. Cryptographic Stripe Webhook Synchronization) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 733.0 Td (Production billing architectures must synchronize subscription state changes from Stripe with zero security vulnerabilities. Naive) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 722.0 Td (systems parse webhook JSON directly without validating signatures, exposing the platform to spoofing attacks where malicious) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 711.0 Td (actors inject fake `checkout.session.completed` events to grant themselves unauthorized Pro access.) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 697.0 Td (The engine implements Stripe's cryptographic HMAC-SHA256 signature verification protocol \(`stripe-signature: t=...,v1=...`\) using) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 686.0 Td (Python's standard library `hmac` and `hashlib` modules. By avoiding external proprietary SDKs, the engine guarantees complete) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 675.0 Td (zero-dependency portability and zero-budget testability. Verification enforces: \(1\) timestamp drift tolerance \(max 300 seconds\) to) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 664.0 Td (defeat replay attacks; \(2\) exact raw payload hashing before JSON parsing; and \(3\) constant-time string comparison) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 653.0 Td (\(`hmac.compare_digest`\) to prevent side-channel timing attacks.) Tj ET
+q 0.12 0.13 0.15 rg 46.0 534.8 520.0 104.2 re f Q
+BT /F2 7.0 Tf 0.70 0.72 0.76 rg 54.0 628.5 Td (Zero-Dependency Constant-Time Stripe Verifier \(app/core/stripe_security.py\)) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 620.0 Td (def verify_stripe_signature\(raw_payload: bytes, sig_header: str, secret: str,) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 610.2 Td (                            tolerance_seconds: int = 300\) -> bool:) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 600.4 Td (    elements = dict\(item.split\('=', 1\) for item in sig_header.split\(','\) if '=' in item\)) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 590.6 Td (    timestamp_str, received_sig = elements.get\('t'\), elements.get\('v1'\)) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 580.8 Td (    if not timestamp_str or not received_sig: return False) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 571.0 Td (    if abs\(int\(time.time\(\)\) - int\(timestamp_str\)\) > tolerance_seconds: return False) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 561.2 Td (    signed_payload = f'{timestamp_str}.'.encode\('utf-8'\) + raw_payload) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 551.4 Td (    expected_sig = hmac.new\(secret.encode\('utf-8'\), signed_payload, hashlib.sha256\).hexdigest\(\)) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 541.6 Td (    return hmac.compare_digest\(expected_sig, received_sig\)) Tj ET
+BT /F2 9.5 Tf 0.05 0.05 0.05 rg 46.0 526.8 Td (11. Webhook Replay Deduplication & State Transitions) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 510.8 Td (Stripe webhooks are delivered with at-least-once guarantees: network retries will deliver identical event IDs multiple times. The) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 499.8 Td (engine records all processed event IDs in `processed_stripe_events`. Duplicate events return HTTP 200 with `status:) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 488.8 Td (already_processed`, safely skipping database mutations and eliminating race conditions during high-volume webhook bursts.) Tj ET
+BT /F2 9.5 Tf 0.05 0.05 0.05 rg 46.0 471.8 Td (12. REST API Surface & OpenAPI Contract) Tj ET
+q 0.92 0.92 0.92 rg 46.0 440.8 520.0 15.0 re f Q
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 50.0 444.8 Td (HTTP Method & Route) Tj ET
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 180.0 444.8 Td (Required Headers / Body) Tj ET
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 320.0 444.8 Td (Response Contract) Tj ET
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 440.0 444.8 Td (Architectural Purpose) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 431.8 Td (POST /api/meter) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 180.0 431.8 Td (Idempotency-Key, tenant_id, tokens) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 320.0 431.8 Td (200 OK \(event_id, cost, replay\)) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 440.0 431.8 Td (Record billable LLM event idempotently) Tj ET
+q 0.97 0.97 0.97 rg 46.0 418.3 520.0 11.0 re f Q
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 420.8 Td (POST /api/generate) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 180.0 420.8 Td (Idempotency-Key, prompt, max_tokens) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 320.0 420.8 Td (200 OK \(text, usage, cost\)) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 440.0 420.8 Td (Gateway proxy: quota check + mock LLM) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 409.8 Td (GET /api/usage) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 180.0 409.8 Td (tenant_id, month=YYYY-MM) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 320.0 409.8 Td (200 OK \(calls, tokens, cost\)) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 440.0 409.8 Td (Monthly aggregated rollup and spend audit) Tj ET
+q 0.97 0.97 0.97 rg 46.0 396.3 520.0 11.0 re f Q
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 398.8 Td (POST /api/billing/checkout) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 180.0 398.8 Td (tenant_id, plan_id, return_urls) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 320.0 398.8 Td (200 OK \(session_id, checkout_url\)) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 440.0 398.8 Td (Create test Stripe checkout session) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 387.8 Td (POST /api/webhooks/stripe) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 180.0 387.8 Td (Stripe-Signature, raw webhook JSON) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 320.0 387.8 Td (200 OK \(status: processed\)) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 440.0 387.8 Td (Cryptographic webhook event synchronizer) Tj ET
+q 0.97 0.97 0.97 rg 46.0 374.3 520.0 11.0 re f Q
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 376.8 Td (GET /health) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 180.0 376.8 Td (None) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 320.0 376.8 Td (200 OK \(status: healthy, db: ok\)) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 440.0 376.8 Td (Liveness probe for orchestration and load balancer) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 46.0 40.0 Td (FlyRank Backend AI Engineering  -  Capstone Submission  -  Jezreal Momoh) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 511.0 40.0 Td (Page 4 of 5) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612.0 792.0] /Contents 12 0 R /Resources << /Font << /F1 99 0 R /F2 98 0 R /F3 97 0 R >> >> >>
+endobj
+12 0 obj
+<< /Length 7773 >>
+stream
+BT /F2 9.5 Tf 0.05 0.05 0.05 rg 46.0 749.0 Td (13. Evaluator Acceptance Probes Verification) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 733.0 Td (To verify complete compliance with the Capstone requirements, the platform was evaluated against five rigorous automated) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 722.0 Td (acceptance probes. All five probes executed with zero errors, verifying every functional contract.) Tj ET
+q 0.92 0.92 0.92 rg 46.0 693.0 520.0 15.0 re f Q
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 50.0 697.0 Td (Acceptance Probe) Tj ET
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 175.0 697.0 Td (Tested Boundary / Scenario) Tj ET
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 315.0 697.0 Td (Observed System Behavior) Tj ET
+BT /F2 7.6 Tf 0.15 0.15 0.15 rg 500.0 697.0 Td (Certification) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 684.0 Td (Probe 1: Idempotency Replay) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 175.0 684.0 Td (Identical Idempotency-Key replay) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 315.0 684.0 Td (Request 2 mirrored Request 1 \(replay=True\), 1 DB row) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 500.0 684.0 Td (PASSED \(100%\)) Tj ET
+q 0.97 0.97 0.97 rg 46.0 670.5 520.0 11.0 re f Q
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 673.0 Td (Probe 2: Quota Boundaries) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 175.0 673.0 Td (Boundary Call 1000 & 1001 + past_due) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 315.0 673.0 Td (Call 1000 OK \(200\), Call 1001 rejected \(429\), past_due \(402\)) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 500.0 673.0 Td (PASSED \(100%\)) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 662.0 Td (Probe 3: Stripe Checkout Flip) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 175.0 662.0 Td (checkout.session.completed delivery) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 315.0 662.0 Td (Tenant flipped Free -> Pro \(quota: 1K -> 50K calls\)) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 500.0 662.0 Td (PASSED \(100%\)) Tj ET
+q 0.97 0.97 0.97 rg 46.0 648.5 520.0 11.0 re f Q
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 651.0 Td (Probe 4: Webhook Security) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 175.0 651.0 Td (Forged signature & replay delivery) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 315.0 651.0 Td (Forged signature rejected \(400\), duplicate event skipped) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 500.0 651.0 Td (PASSED \(100%\)) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 50.0 640.0 Td (Probe 5: Token Pricing Math) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 175.0 640.0 Td (10k in, 20k cached, 5k out, 5k reasoning) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 315.0 640.0 Td (Computed exact 900,000 microcents \($0.009000 USD\)) Tj ET
+BT /F1 7.2 Tf 0.20 0.20 0.20 rg 500.0 640.0 Td (PASSED \(100%\)) Tj ET
+BT /F2 9.5 Tf 0.05 0.05 0.05 rg 46.0 622.0 Td (14. Automated Test Suite & Code Quality Audit) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 606.0 Td (The codebase was subjected to comprehensive test-driven verification under `pytest`. Thirty dedicated tests validate schema) Tj ET
+BT /F1 8.0 Tf 0.10 0.10 0.10 rg 46.0 595.0 Td (boundaries, integer math precision, concurrency, database integrity, and REST endpoints:) Tj ET
+q 0.12 0.13 0.15 rg 46.0 447.4 520.0 133.6 re f Q
+BT /F2 7.0 Tf 0.70 0.72 0.76 rg 54.0 570.5 Td (Pytest Suite Verification Transcript) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 562.0 Td (tests/test_acceptance_probes.py::test_acceptance_probe_1_idempotency           PASSED) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 552.2 Td (tests/test_acceptance_probes.py::test_acceptance_probe_2_quota_boundaries      PASSED) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 542.4 Td (tests/test_acceptance_probes.py::test_acceptance_probe_3_stripe_checkout_flip  PASSED) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 532.6 Td (tests/test_acceptance_probes.py::test_acceptance_probe_4_webhook_security     PASSED) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 522.8 Td (tests/test_acceptance_probes.py::test_acceptance_probe_5_token_pricing_rules  PASSED) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 513.0 Td (tests/test_api_endpoints.py::test_boundary_validation_422_on_missing_fields   PASSED) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 503.2 Td (tests/test_api_endpoints.py::test_missing_idempotency_header_rejected         PASSED) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 493.4 Td (tests/test_idempotency.py::test_no_double_counting_in_database                 PASSED) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 483.6 Td (tests/test_money_math.py::test_reasoning_tokens_billed_as_output               PASSED) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 473.8 Td (tests/test_money_math.py::test_cached_input_tokens_discount                   PASSED) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 464.0 Td (tests/test_stripe_webhooks.py::test_forged_signature_fails_verification        PASSED) Tj ET
+BT /F3 6.8 Tf 0.88 0.90 0.92 rg 54.0 454.2 Td (======================== 30 passed in 2.79s ========================) Tj ET
+BT /F2 9.5 Tf 0.05 0.05 0.05 rg 46.0 439.4 Td (15. Engineering Retrospective & Production Lessons) Tj ET
+q 0.96 0.96 0.96 rg 46.0 348.4 520.0 75.0 re f Q
+BT /F2 8.5 Tf 0.10 0.10 0.10 rg 54.0 412.4 Td (Key Engineering Takeaways & Hardened Architectural Patterns) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 399.4 Td (1. Integer Money Math Everywhere) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 399.4 Td (Never allow IEEE-754 floats in financial ledgers. Microcents guarantee exact zero-leakage accounting.) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 388.6 Td (2. Pre-Action Quota Gating) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 388.6 Td (Never meter after execution. Pre-action checks protect compute and prevent uncollectible debt.) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 377.8 Td (3. Idempotency Response Caching) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 377.8 Td (Deduplicating requires caching full response bodies so retries mirror original responses exactly.) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 367.0 Td (4. Webhook Replay Deduplication) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 367.0 Td (Always persist processed event IDs. Network retries must safely no-op without duplicating state flips.) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 356.2 Td (5. Cryptographic Self-Reliance) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 356.2 Td (Implementing HMAC-SHA256 directly guarantees zero external dependencies and total testability.) Tj ET
+BT /F2 9.5 Tf 0.05 0.05 0.05 rg 46.0 340.4 Td (16. Verification & Final Sign-Off) Tj ET
+q 0.96 0.96 0.96 rg 46.0 249.4 520.0 75.0 re f Q
+BT /F2 8.5 Tf 0.10 0.10 0.10 rg 54.0 313.4 Td (Formal Capstone Sign-Off & Evaluator Verification Record) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 300.4 Td (Candidate) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 300.4 Td (Jezreal Momoh \(jezreal-dev\)  <jezreelmomoh1234@gmail.com>) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 289.6 Td (Assignment) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 289.6 Td (Backend AI Engineering - Week 8 Capstone \(LLM Usage Metering & Billing Engine\)) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 278.8 Td (Repository) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 278.8 Td (https://github.com/jezreal-dev/flyrank-capstone-metering-billing) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 268.0 Td (Deliverables) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 268.0 Td (Full FastAPI Codebase, SQLite WAL Engine, 30 Pytest Tests, 5 Acceptance Probes, 5-Page PDF) Tj ET
+BT /F2 7.6 Tf 0.20 0.20 0.20 rg 56.0 257.2 Td (Budget & License) Tj ET
+BT /F1 7.6 Tf 0.30 0.30 0.30 rg 201.0 257.2 Td ($0.00 Total Expenditure \(Compliant with $0 Budget Guarantee\)  |  MIT Open Source License) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 46.0 40.0 Td (FlyRank Backend AI Engineering  -  Capstone Submission  -  Jezreal Momoh) Tj ET
+BT /F1 8.0 Tf 0.35 0.35 0.35 rg 511.0 40.0 Td (Page 5 of 5) Tj ET
+endstream
+endobj
+99 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+98 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+97 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 16
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000140 00000 n 
+0000000293 00000 n 
+0000007598 00000 n 
+0000007751 00000 n 
+0000014921 00000 n 
+0000015074 00000 n 
+0000022449 00000 n 
+0000022603 00000 n 
+0000028956 00000 n 
+0000029111 00000 n 
+0000036937 00000 n 
+0000037008 00000 n 
+0000037084 00000 n 
+trailer
+<< /Size 16 /Root 1 0 R >>
+startxref
+37153
+%%EOF
